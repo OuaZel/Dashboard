@@ -39,13 +39,13 @@ ul li{
 .nav-menu li:hover{
     background-color: #F6F4FE;
 }
-li:hover .overlay{
+.nav-menu li:hover::before{
+    content:"";
+    display: block;
     position: absolute;
     background-color: #AF9EC9;
-    top: 0;
-    right: 95%;
-    bottom: 0;
-    left: 0;
+    width: 5px;
+    height: 100%;
   }
 .profile-img{
     display: block;
